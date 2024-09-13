@@ -26,7 +26,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         if (singleton==null)
         {
-            singleton = FindObjectOfType<ScoreKeeper>();
+            singleton = FindObjectOfType<ScoreKeeper>(); //Not able to get the original singleton
         }
         return singleton;
     }
