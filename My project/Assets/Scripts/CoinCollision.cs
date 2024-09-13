@@ -10,7 +10,7 @@ public class CoinCollision : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(collider Collider) {
+    void OnTriggerEnter(Collider collider) {
         ScoreKeeper.Get().OnPickup(1);
     }
     
