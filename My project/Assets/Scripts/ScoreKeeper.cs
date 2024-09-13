@@ -5,15 +5,8 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     private static ScoreKeeper singleton;
-    private int score;
+    private int score = 0;
     public int State {get => score;set => score = value;}
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        score = 0;
-    }
 
     private void OnPickup(int coinPoints)
     {
