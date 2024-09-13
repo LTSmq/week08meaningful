@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
      private InputAction WalkingAction;
-     private PlayerActivity actions;
+     private Movement actions;
 
        private float moveSpeed = 7f; 
        private Vector3 playerDirection = new Vector3(0f, 0f, 0f);
 
     void Awake()
     {
-        actions = new PlayerActivity();
+        actions = new Movement();
         WalkingAction = actions.Walking.walking;
     }
 
