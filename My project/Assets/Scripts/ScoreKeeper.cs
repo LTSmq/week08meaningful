@@ -8,7 +8,7 @@ public class ScoreKeeper : MonoBehaviour
     private int score = 0;
     public int State {get => score;set => score = value;}
 
-    private void OnPickup(int coinPoints)
+    public void OnPickup(int coinPoints)
     {
         score += coinPoints;
         State = score;
