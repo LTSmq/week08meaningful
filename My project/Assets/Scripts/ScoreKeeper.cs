@@ -8,6 +8,14 @@ public class ScoreKeeper : MonoBehaviour
     private int score = 0;
     public int State {get => score;set => score = value;}
 
+    void Start()
+    {
+        if (singleton==null)
+        {
+            singleton = this;
+        }
+    }
+
     public void OnPickup(int coinPoints)
     {
         score += coinPoints;
@@ -18,7 +26,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         if (singleton==null)
         {
-            singleton = new ScoreKeeper();
+            singleton = FindObjectOfType<ScoreKeeper>();
         }
         return singleton;
     }

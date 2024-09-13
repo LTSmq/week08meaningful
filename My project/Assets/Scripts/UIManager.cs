@@ -14,18 +14,20 @@ public class UIManager : MonoBehaviour
     {
         scoreKeeper = ScoreKeeper.Get();
         textBox = FindObjectOfType<TMP_Text>();
+        Debug.Log(textBox);
     }
     // Update is called once per frame
     void Update()
     {
         text = preamble + scoreKeeper.State.ToString();
         textBox.text = text;
+
     }
     public static UIManager Get()
     {
         if (singleton == null)
         {
-            singleton = new UIManager();
+            singleton = FindObjectOfType<UIManager>();
         };
         return singleton;
     }

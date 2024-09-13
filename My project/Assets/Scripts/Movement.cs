@@ -85,7 +85,7 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""1552c7b8-4b0a-4c3a-90c8-1978889a3ad5"",
-                    ""path"": ""<Keyboard>/delete"",
+                    ""path"": ""<Keyboard>/#(D)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

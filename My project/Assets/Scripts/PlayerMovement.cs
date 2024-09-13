@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     {
         actions = new Movement();
         WalkingAction = actions.Walking.walking;
+        UIManager.Get();
+        ScoreKeeper.Get();
     }
 
     void OnEnable()
